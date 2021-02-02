@@ -1,0 +1,33 @@
+{
+  "name": "youtubeclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "io": "node io.js",
+    "server": "node server.js",
+    "client": "npm run start --prefix client",
+    "start": "concurrently  \"npm run client \" \"npm run io\"   "
+  },
+  "engines": {
+    "npm": "6.9.0",
+    "node": "10.16.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dg022/YouTubeClone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dg022/YouTubeClone/issues"
+  },
+  "homepage": "https://github.com/dg022/YouTubeClone#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.15",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
+  }
+}
